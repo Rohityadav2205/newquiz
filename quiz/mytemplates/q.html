@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ-APP</title>
+</head>
+<body bgcolor="green"></body>
+<center>---------QUIZ-APP-----------</center>
+
+<form>
+    <h2>{{currentquestion}}</h2>
+
+    <input value="{{qno}}" name="question" type="hidden"><br>
+    <input value="{{score}}" name="score" type="hidden"><br>
+    <input name="option" type="submit" value="True">
+    <input name="option" type="submit" value="False">
+
+    <br>
+
+    <h2 style="color:black">Previous-Question:- {{previousans}}</h2>
+    <h2 style="color:black"> Result:- {{result}}</h2>
+    <h2 style="color:black"> Score:- {{score}}</h2>
+
+</form>
+
+</html>

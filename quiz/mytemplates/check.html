@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="https://3.bp.blogspot.com/-py5FbTZgvjo/YDi1bsQq16I/AAAAAAAACB0/BxejbJBcHA4AVfkB33WYC3YlVmxElM7BwCK4BGAYYCw/s1600/Varanasi%2BSoftware%2BJunction%2BPhone%2BLogo.png"
+          rel="icon"
+          type="image/x-icon">
+
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+    <title>Quiz App</title>
+    <style>
+      .top {
+        position: absolute;
+        background-color: skyblue;
+        width: 100%;
+        height: 20%;
+      }
+      .h1style {
+        width: fit-content;
+        background-color: green;
+        box-shadow: 4px 4px 4px pink;
+        border-radius: 10%;
+        z-index: 50;
+      }
+      .centerdiv {
+        position: absolute;
+        background-color: black;
+        top: 9.1%;
+        width: 100%;
+        height: 60%;
+      }
+      .questiondisplay {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        color: blue;
+        font-size: xx-large;
+      }
+      .truebutton {
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        height: 10%;
+        background-color: green;
+        font-size: xx-large;
+      }
+      .falsebutton {
+        position: absolute;
+        font-size: xx-large;
+        top: 80%;
+        width: 100%;
+        height: 10%;
+        background-color: red;
+        opacity: 0.8s;
+      }
+      .results {
+        position: absolute;
+        font-size: xx-large;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        background-color:yellow;
+        opacity: 0.8s;
+
+
+      }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <center>
+        <h1 class="h1style">Quiz App</h1>
+    </center>
+
+</div>
+<div class="centerdiv">
+    <h1 class="questiondisplay">{{currentquestion}}</h1>
+</div>
+<form>
+    <textarea style="display:none;" name="result">{{results}}</textarea>
+    <input type="hidden" name="question" value="{{qno}}">
+    <input type="hidden" name="score" value="{{score}}">
+<!--    <input type="hidden" name="option" value="{{option}}">-->
+<!--    <input type="hidden" name="result" value="{{result}}">-->
+
+
+    <button class="truebutton" name="option" type="submit" value="1">True</button>
+    <button class="falsebutton" name="option" type="submit" value="0">False</button>
+
+
+    <center>
+
+        <!--    <span class="material-icons" style="color: red">close</span>-->
+    </center>
+</form>
+<div class="results">
+    <h12 style="color:black">Previous-Question:- {{previousans}}</h12>
+    <br>
+    <h12 style="color:black"> Result:- {{result}}</h12>
+    <br>
+    <h12 style="color:black"> Score:- {{score}}</h12>
+    <!---->
+<!--    {{results}}-->
+</div>
+
+</body>
+</html>
